@@ -1,9 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary
-Library           SikuliLibrary    mode=NEW
-Library           DiffLibrary
-Library           AppiumLibrary
-Library           ExcelLibrary
+
 
 *** Variables ***
 ${LOGIN URL}      http://cvm.xerago.net/
@@ -21,4 +18,3 @@ Valid Credentials Test
     SeleniumLibrary.Input Text    id=form_password    cvmcreator@123
     Click Button    form_login
 
-*** Keywords ***
