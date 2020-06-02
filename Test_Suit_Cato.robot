@@ -4,12 +4,12 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${LOGIN URL}      http://cvm.xerago.net/
-${BROWSER}        chrome
+${browser_}        chrome
 ${excel_file}     I:/testdata.xls
 
 *** Test Cases ***
 Valid Credentials Test
-    Open Browser    ${LOGIN URL}    ${BROWSER}
+    Open Browser    ${LOGIN URL}    ${browser_}
     Maximize Browser Window
     Wait Until Element Is Enabled    //div[@class='login-footertxt']/p
     Element Text Should Be    //label[@class='loginLabel']    Username
